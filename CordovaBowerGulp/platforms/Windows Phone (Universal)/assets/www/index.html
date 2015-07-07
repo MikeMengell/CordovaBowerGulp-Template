@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html ng-csp ng-app="app">
+<head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page title set in pageTitle directive -->
+    <title page-title>App Name</title>
+    <!-- Bootstrap and Fonts -->
+    <link href="lib/bootstrap.css" rel="stylesheet" />
+    <link href="lib/font-awesome.css" rel="stylesheet" />
+
+    <link href="css/index.css" rel="stylesheet" />
+    <link href="app/directives/autocomplete.css" rel="stylesheet" />
+</head>
+
+<body ng-controller="HomeController as home">
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <div ng-include="'app/layout/navigation.html'"></div>
+
+        <!-- Page wraper -->
+        <!-- ng-class with current state name give you the ability to extended customization your view -->
+        <div id="page-wrapper" class="gray-bg {{$state.current.name}}">
+
+            <!-- Main view  -->
+            <div ui-view></div>
+
+        </div>
+        <!-- End page wrapper-->
+
+    </div>
+    <!-- End wrapper-->
+
+    <script src="scripts/platformOverrides.js"></script>
+
+    <!-- jQuery and Bootstrap -->
+    <script src="lib/jquery.js"></script>
+    <script src="lib/jquery-ui.js"></script>
+    <script src="lib/bootstrap.js"></script>
+
+    <!-- Angular scripts-->
+    <script src="lib/angular.js"></script>
+    <script src="lib/angular-ui-router.js"></script>
+    <script src="lib/ui-bootstrap-tpls.js"></script>
+
+    <script src="lib/lodash.js"></script>
+    <script src="lib/restangular.js"></script>
+    <script src="lib/ng-cordova.js"></script>
+
+    <script src="app/services/MobileServices.Web-1.2.5.min.js"></script>
+    <script src="lib/angular-azure-mobile-service.min.js"></script>
+    <script src="app/services/angular-mobile-service-client.js"></script>
+
+    <!-- Angular Dependiences -->
+    <!-- Anglar App Script -->
+    <script src="app/app.js"></script>
+    <script src="app/config.js"></script>
+    <script src="app/services/dataservice.js"></script>
+    <script src="app/services/cities.service.js"></script>
+    <script src="app/directives/ngAutocomplete.js"></script>
+
+    <!--Chart Directive-->
+    <script src="lib/d3.js"></script>
+
+    <!--Home-->
+    <script src="app/home/home.controller.js"></script>
+
+    <!--About-->
+    <script src="app/about/about.controller.js"></script>
+
+    <!--Search-->
+    <script src="app/search/search.controller.js"></script>
+
+    <!--Azure Moile Services-->
+    <script src="cordova.js"></script>
+
+</body>
+</html>

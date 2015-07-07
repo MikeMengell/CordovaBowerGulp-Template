@@ -1,0 +1,9 @@
+{
+    "devDependencies": {
+        "gulp": "latest",
+        "main-bower-files": "~2.8.2",
+        "taco-team-build": "http://aka.ms/tacoteambuild-rel",
+        "gulp-eslint": "~0.15.0",
+        "gulp-watch": "~4.2.4"
+    }
+}

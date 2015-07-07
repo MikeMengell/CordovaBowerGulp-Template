@@ -1,0 +1,13 @@
+﻿.ng-hide {
+  /* this is just another form of hiding an element */
+  display: block!important;
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('../lib/glyphicons-halflings-regular.eot');
+  src: url('../lib/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../lib/glyphicons-halflings-regular.woff') format('woff'), url('../lib/glyphicons-halflings-regular.ttf') format('truetype'), url('../lib/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+}
